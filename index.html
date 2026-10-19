@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SHOW ME AT ONCE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <h1>SHOW ME AT ONCE</h1>
+    <p class="intro">원하는 옷 사진 복사 붙여넣기해서 한 번에 보세요</p>
+
+    <div class="slots" id="slots">
+      <div class="slot" data-slot="top">
+        <div class="slot-area" tabindex="0">
+          <div class="slot-hint">
+            <strong>상의</strong>
+            <span>클릭하고 Ctrl+V 또는 이미지를 끌어다 놓기</span>
+          </div>
+          <p class="slot-error" hidden></p>
+        </div>
+        <button class="clear" type="button">비우기</button>
+      </div>
+
+      <div class="slot" data-slot="bottom">
+        <div class="slot-area" tabindex="0">
+          <div class="slot-hint">
+            <strong>하의</strong>
+            <span>클릭하고 Ctrl+V 또는 이미지를 끌어다 놓기</span>
+          </div>
+          <p class="slot-error" hidden></p>
+        </div>
+        <button class="clear" type="button">비우기</button>
+      </div>
+
+      <div class="slot" data-slot="shoes">
+        <div class="slot-area" tabindex="0">
+          <div class="slot-hint">
+            <strong>신발</strong>
+            <span>클릭하고 Ctrl+V 또는 이미지를 끌어다 놓기</span>
+          </div>
+          <p class="slot-error" hidden></p>
+        </div>
+        <button class="clear" type="button">비우기</button>
+      </div>
+    </div>
+
+    <p class="footer">이미지는 내 브라우저 안에서만 쓰이고 서버로 보내지지 않아요.</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
